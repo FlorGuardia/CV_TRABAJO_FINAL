@@ -1,0 +1,53 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#presentacion {
+    background-color: #ECD7F9;
+    height: 1300px;
+}
+
+#carrera {
+    background-color: #F8F1FC ;
+}
+
+#foto {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.espaciado-vertical {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#nombre {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#separador_contacto {
+    color: #000000;
+    height: 0px;
+    border: 1px dashed;
+    opacity: 1;
+    margin: 0px 50px 0px 50px;
+    margin-top: 50px;
+}
+
+#separador_nombre {
+    color: #000000;
+    height: 0px;
+    border: 1px solid;
+    opacity: 1;
+    margin: 0px 50px 0px 50px;
+    margin-top: 50px;
+}

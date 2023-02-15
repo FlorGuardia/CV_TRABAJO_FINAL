@@ -1,37 +1,45 @@
 *{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+body {
+    background-color:black;
 }
 
 #presentacion {
     background-color: #ECD7F9;
-    height: 1300px;
+    height:2300px;
 }
 
 #carrera {
-    background-color: #F8F1FC ;
+    background-color: #F8F1FC;
+    height: 2300px
 }
 
 #foto {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
-	background: red;
+	background: pink;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+    margin-bottom: 105px;
+    margin-top: 100px;
+}
+
+#nombre {
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80px;
+    display: block;
+    font-size: 80px;
 }
 
 .espaciado-vertical {
     margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-#nombre {
-    margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 #separador_contacto {
@@ -40,7 +48,7 @@
     border: 1px dashed;
     opacity: 1;
     margin: 0px 50px 0px 50px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 #separador_nombre {
@@ -51,3 +59,61 @@
     margin: 0px 50px 0px 50px;
     margin-top: 50px;
 }
+
+.ocultar {
+    display:none;
+}
+
+.mostrar {
+    display: block;
+}
+
+#texto_btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 15px;
+    background: #DBACF4;
+}
+
+#tit_exp_laboral, #tit_habilidades, #tit_idiomas, #tit_contacto, #tit_educacion {
+    border-style:groove;
+    border-color: #a945c7;
+    border-radius: 25px;
+}
+
+.mx-auto {
+    border-style: solid;
+    color: black ;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+
+#exp_laboral {
+    background-color: #E1C1F1;
+}
+
+#profesion {
+    font-size: 20px;
+}
+
+#sobre_mi {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type:"🧁";
+    font-size: 20px;
+}
+
+h1 {
+    position: relative;
+    font-size: 5rem;
+}
+  
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+

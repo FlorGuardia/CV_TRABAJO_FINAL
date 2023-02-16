@@ -1,5 +1,5 @@
 
-let texto_btn = document.getElementById('texto_btn')
+let texto_btn= document.getElementById('texto_btn')
 
 let texto = document.getElementById('texto')
 
@@ -11,7 +11,7 @@ function cambiarStyle() {
     if  (texto.classList.contains('mostrar')) {
         texto_btn.innerHTML= 'Ver menos'; 
     } else {
-    texto_btn.innerHTML= 'Ver mas';
+    texto_btn.innerHTML= 'Ver más';
     }
 }
 

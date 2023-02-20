@@ -1,17 +1,15 @@
+function mostrar_ocultar(blq,btn) {
+    let bloque = document.getElementById(blq)
+    let boton = document.getElementById(btn) 
 
-let texto_btn= document.getElementById('texto_btn')
-
-let texto = document.getElementById('texto')
-
-texto_btn.addEventListener('click', cambiarStyle); 
-
-function cambiarStyle() {
-    texto.classList.toggle('mostrar') 
-
-    if  (texto.classList.contains('mostrar')) {
-        texto_btn.innerHTML= 'Ver menos'; 
+    if  (bloque.classList.contains('mostrar')) {
+        bloque.classList.toggle('mostrar')
+        bloque.classList.toggle('ocultar')
+        boton.innerHTML = 'Ver más'; 
     } else {
-    texto_btn.innerHTML= 'Ver más';
+        bloque.classList.toggle('ocultar')
+        bloque.classList.toggle('mostrar')
+        boton.innerHTML= 'Ver menos';
     }
 }
 

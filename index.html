@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum vitae</title>
+    <link rel="shortcut icon" href="imagenes/Cupcake.jpeg">
+    <!--Hojas de estilo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="imagenes/Cupcake.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="row align-items-lg-stretch">
-            <div class="col"></div>
-                <div id="presentacion" class="col-3 elementos text-center">
+            <div id="presentacion" class="col-4 elementos text-center">
 
-                    <img class="mx-auto d-block" id="foto" src="imagenes/foto_curriculum.jpeg" alt="Foto de Ana Rodriguez">
-                    
-                    <p class="font-italic" id="sobre_mi">
-                        <em>Soy pastelera profesional con más de 4 años de experiencia en la creación de postres y pasteles de alta calidad, 
-                        cuento con amplio conocimiento en la elaboración de pasteles personalizados y decorados para ocasiones especiales, 
-                        ademas de una gran habilidad para trabajar en equipo y liderar proyectos de manera efectiva.</em>
-                    </p> 
-                    
-                    <hr id="separador_contacto"/>
+                <img class="mx-auto d-block" id="foto" src="imagenes/foto_curriculum.jpeg" alt="Foto de Ana Rodriguez">
 
-                    <h2 id="tit_contacto" class="espaciado-vertical"><i class="fa-solid fa-user mx-3"></i>CONTACTO</h2>
-                        <span class="ocultar" id="texto">
-                            <p>
-                                <ul>  
-                                    <li> <u>Dirección</u>:<br> Calle Tucumán 123, Buenos Aires, Argentina.</li><br/>
-                                    <li> <u>Teléfono</u>:<br> +54 11 5678 1234.</li><br/>
-                                    <li> <u>Correo electrónico:</u><br> anarodriguez@gmail.com</li>
-                                </ul>
-                            </p>
-                        </span>
-                            <button class="btn" id="texto_btn">Ver más</button>
-                    <hr id="separador_contacto"/>
+                <p id="sobre_mi">
+                    <em>Soy pastelera profesional con más de 4 años de experiencia en la creación de postres y pasteles
+                        de alta calidad, cuento con amplio conocimiento en la elaboración de pasteles personalizados y 
+                        decorados para ocasiones especiales, ademas de una gran habilidad para trabajar en equipo y 
+                        liderar proyectos de manera efectiva.</em>
+                </p>
 
-                    <h2 id="tit_educacion" class="espaciado-vertical"><i class="fa-solid fa-user-graduate mx-3"></i>EDUCACIÓN</h2>
+                <hr class="separador_punteado" />
+
+                <h2 id="tit_contacto" class="espaciado-vertical"><i class="fa-solid fa-user mx-3"></i>CONTACTO</h2>
+                <span class="ocultar" id="texto_contacto">
                     <p>
-                        <ul>
-                            <li>Título en Repostería y Pastelería, Escuela de Gastronomía, Buenos Aires, Argentina, 2016-2019.</li><br/>
-                            <li>Curso de Decoración de Pasteles, Escuela de Repostería Creativa, Buenos Aires, Argentina, 2019.</li><br/>
-                            <li>Curso de Postres y Dulces Finos, Instituto Argentino de Gastronomía, Buenos Aires, Argentina, 2020.</li>
-                        </ul>
+                    <ul>
+                        <li> <u>Dirección</u>:<br> Calle Tucumán 123, Buenos Aires, Argentina.</li><br/>
+                        <li> <u>Teléfono</u>:<br> +54 11 5678 1234.</li><br/>
+                        <li> <u>Correo electrónico:</u><br> anarodriguez@gmail.com</li>
+                    </ul>
                     </p>
-                </div>
+                </span>
+                <button class="btn" id="btn_contacto" onclick="mostrar_ocultar('texto_contacto','btn_contacto')">
+                    Ver más
+                </button>
 
-                    <div id="carrera" class="col-6">
-                
-                        <hr id="separador_nombre"/>
-                        <h1 id="nombre" class="text-center">ANA RODRIGUEZ</h1>
-                        <p id="profesion" class="text-center"><em>PASTELERA PROFESIONAL</em></p>
-                        <hr id="separador_nombre"/>
+                <hr class="separador_punteado" />
 
-                        <h2 id="tit_exp_laboral" class="mt-5 text-center"><i class="fa-solid fa-briefcase mx-3"></i>EXPERIENCIA LABORAL</h2>
-                        <p> 
-                            <ul>
-                                <h4 id="exp_laboral" class="mt-4 text-center">Pastelera y Chef repostera, Confitería "Doce", Buenos Aires, Argentina (2020-actualidad).</h4><br/>
-                                <li>Diseño de pasteles personalizados para bodas, cumpleaños, bautismos y otras ocasiones especiales.</li><br/>
-                                <li>Supervisión y entrenamiento de nuevos empleados en técnicas de repostería y decoración de pasteles.</li><br/>
-                                <li>Administración de presupuesto y control de inventario de ingredientes y suministros.</li><br/>
-                        
-                                <h4 id="exp_laboral" class="mt-4 text-center">Pastelera y Decoradora de pasteles, Pastelería "La Bella Easo, Buenos Aires, Argentina (2019-2020).</h4><br/>
-                                <li>Creación de pasteles decorados y personalizados.</li><br/>
-                                <li>Coordinación con el equipo de cocina y servicio al cliente.</li><br/>
-                                <li>Diseño y creación de nuevos postres y pasteles para el menú.</li>
-                            </ul>
-                        </p>
+                <h2 id="tit_educacion" class="espaciado-vertical"><i
+                        class="fa-solid fa-user-graduate mx-3"></i>EDUCACIÓN</h2>
+                <span class="ocultar" id="texto_educacion">
+                    <p>
+                    <ul>
+                        <li>Título en Repostería y Pastelería, Escuela de Gastronomía, Buenos Aires, Argentina,
+                            2016-2019.</li><br />
+                        <li>Curso de Decoración de Pasteles, Escuela de Repostería Creativa, Buenos Aires, Argentina,
+                            2019.</li><br />
+                        <li>Curso de Postres y Dulces Finos, Instituto Argentino de Gastronomía, Buenos Aires,
+                            Argentina, 2020.</li>
+                    </ul>
+                    </p>
+                </span>
+                <button class="btn" id="btn_educacion" onclick="mostrar_ocultar('texto_educacion','btn_educacion')">
+                    Ver más
+                </button>
 
-                        <h2 id="tit_habilidades" class="mt-5 text-center"><i class="fa-solid fa-award mx-3"></i>HABILIDADES</h2>
-                        <p>
-                            <ul>
-                                <li>Experta en la elaboración de postres y dulces, incluyendo tortas, pasteles, cupcakes y macarrones.</li><br/>
-                                <li>Conocimiento profundo de los ingredientes, técnicas y utensilios de la repostería.</li><br/>
-                                <li>Habilidad para trabajar en un entorno de cocina acelerado y mantener altos estándares de higiene y seguridad alimentaria.</li><br/>
-                            </ul>
-                        </p>
+            </div>
 
-                        <h2 id="tit_idiomas" class="mt-5 text-center"><i class="fa-solid fa-book mx-3"></i>IDIOMAS</h2>
-                        <p>
-                            <ul>
-                                <li>Español (nativo).</li><br/>
-                                <li>Inglés (intermedio).</li> 
-                            </ul>
-                        </p>
-                    </div>
-                <div class="col"></div>
+            <div id="carrera" class="col-8">
+
+                <hr class="separador_nombre" />
+                <h1 id="nombre" class="text-center">ANA RODRIGUEZ</h1>
+                <p id="profesion" class="text-center"><em>PASTELERA PROFESIONAL</em></p>
+                <hr class="separador_nombre" />
+
+                <h2 id="tit_exp_laboral" class="mt-5 text-center">
+                    <i class="fa-solid fa-briefcase mx-3"></i>
+                    EXPERIENCIA LABORAL
+                </h2>
+
+                <p>
+                    <ul>
+                        <h4 id="exp_laboral" class="mt-4 text-center">Pastelera y Chef repostera, Confitería "Doce", Buenos
+                            Aires, Argentina (2020-actualidad).</h4><br/>
+                        <li>Diseño de pasteles personalizados para bodas, cumpleaños, bautismos y otras ocasiones
+                            especiales.</li><br/>
+                        <li>Supervisión y entrenamiento de nuevos empleados en técnicas de repostería y decoración de
+                            pasteles.</li><br/>
+                        <li>Administración de presupuesto y control de inventario de ingredientes y suministros.</li><br/>
+
+                        <h4 id="exp_laboral" class="mt-4 text-center">Pastelera y Decoradora de pasteles, Pastelería "La
+                            Bella Easo, Buenos Aires, Argentina (2019-2020).</h4><br/>
+                        <li>Creación de pasteles decorados y personalizados.</li><br/>
+                        <li>Coordinación con el equipo de cocina y servicio al cliente.</li><br/>
+                        <li>Diseño y creación de nuevos postres y pasteles para el menú.</li>
+                    </ul>
+                </p>
+
+                <h2 id="tit_habilidades" class="mt-5 text-center"><i class="fa-solid fa-award mx-3"></i>HABILIDADES</h2>
+                <p>
+                    <ul>
+                        <li>Experta en la elaboración de postres y dulces, incluyendo tortas, pasteles, cupcakes y
+                            macarrones.</li><br/>
+                        <li>Conocimiento profundo de los ingredientes, técnicas y utensilios de la repostería.</li><br/>
+                        <li>Habilidad para trabajar en un entorno de cocina acelerado y mantener altos estándares de higiene
+                            y seguridad alimentaria.</li><br/>
+                    </ul>
+                </p>
+
+                <h2 id="tit_idiomas" class="mt-5 text-center"><i class="fa-solid fa-book mx-3"></i>IDIOMAS</h2>
+                <p>
+                    <ul>
+                        <li>Español (nativo).</li><br />
+                        <li>Inglés (intermedio).</li>
+                    </ul>
+                </p>
+            </div>
         </div>
     </div>
     <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/d446e1f474.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
